@@ -9,6 +9,9 @@ import { navItems } from './_nav';
 export class DefaultLayoutComponent {
 
   public navItems = navItems;
+  sidebar: any={
+    narrow: true,
+  }
 
   public perfectScrollbarConfig = {
     suppressScrollX: true,

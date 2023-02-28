@@ -5,240 +5,101 @@ export const navItems: INavData[] = [
     name: 'Dashboard',
     url: '/dashboard',
     iconComponent: { name: 'cil-speedometer' },
-    badge: {
-      color: 'info',
-      text: 'NEW'
-    }
+    // badge: {
+    //   color: 'info',
+    //   text: 'NEW'
+    // }
   },
   {
-    title: true,
-    name: 'Theme'
-  },
-  {
-    name: 'Colors',
-    url: '/theme/colors',
-    iconComponent: { name: 'cil-drop' }
-  },
-  {
-    name: 'Typography',
-    url: '/theme/typography',
-    linkProps: { fragment: 'someAnchor' },
-    iconComponent: { name: 'cil-pencil' }
-  },
-  {
-    name: 'Components',
+    name: 'Tournaments',
     title: true
   },
   {
-    name: 'Base',
+    name: 'Cities',
     url: '/base',
     iconComponent: { name: 'cil-puzzle' },
     children: [
       {
-        name: 'Accordion',
+        name: 'Karachi',
         url: '/base/accordion'
       },
       {
-        name: 'Breadcrumbs',
+        name: 'Lahore',
         url: '/base/breadcrumbs'
       },
       {
-        name: 'Cards',
+        name: 'Islamabad',
         url: '/base/cards'
       },
-      {
-        name: 'Carousel',
-        url: '/base/carousel'
-      },
-      {
-        name: 'Collapse',
-        url: '/base/collapse'
-      },
-      {
-        name: 'List Group',
-        url: '/base/list-group'
-      },
-      {
-        name: 'Navs & Tabs',
-        url: '/base/navs'
-      },
-      {
-        name: 'Pagination',
-        url: '/base/pagination'
-      },
-      {
-        name: 'Placeholder',
-        url: '/base/placeholder'
-      },
-      {
-        name: 'Popovers',
-        url: '/base/popovers'
-      },
-      {
-        name: 'Progress',
-        url: '/base/progress'
-      },
-      {
-        name: 'Spinners',
-        url: '/base/spinners'
-      },
-      {
-        name: 'Tables',
-        url: '/base/tables'
-      },
-      {
-        name: 'Tabs',
-        url: '/base/tabs'
-      },
-      {
-        name: 'Tooltips',
-        url: '/base/tooltips'
-      }
     ]
   },
   {
-    name: 'Buttons',
+    name: 'Games',
     url: '/buttons',
     iconComponent: { name: 'cil-cursor' },
     children: [
       {
-        name: 'Buttons',
+        name: 'Fooseball',
         url: '/buttons/buttons'
       },
       {
-        name: 'Button groups',
+        name: 'Cricket',
         url: '/buttons/button-groups'
       },
       {
-        name: 'Dropdowns',
+        name: 'Table Tennis',
+        url: '/buttons/dropdowns'
+      },
+      {
+        name: 'Ludo',
         url: '/buttons/dropdowns'
       },
     ]
   },
   {
-    name: 'Forms',
+    name: 'Teams',
     url: '/forms',
     iconComponent: { name: 'cil-notes' },
     children: [
       {
-        name: 'Form Control',
+        name: 'Fooseball',
         url: '/forms/form-control'
       },
       {
-        name: 'Select',
+        name: 'Cricket',
         url: '/forms/select'
       },
       {
-        name: 'Checks & Radios',
+        name: 'Ludo',
         url: '/forms/checks-radios'
       },
       {
-        name: 'Range',
+        name: 'Table Tennis',
         url: '/forms/range'
       },
-      {
-        name: 'Input Group',
-        url: '/forms/input-group'
-      },
-      {
-        name: 'Floating Labels',
-        url: '/forms/floating-labels'
-      },
-      {
-        name: 'Layout',
-        url: '/forms/layout'
-      },
-      {
-        name: 'Validation',
-        url: '/forms/validation'
-      }
     ]
   },
   {
-    name: 'Charts',
+    name: 'New Teams',
     url: '/charts',
-    iconComponent: { name: 'cil-chart-pie' }
-  },
-  {
-    name: 'Icons',
-    iconComponent: { name: 'cil-star' },
-    url: '/icons',
+    iconComponent: { name: 'cil-chart-pie' },
     children: [
       {
-        name: 'CoreUI Free',
-        url: '/icons/coreui-icons',
-        badge: {
-          color: 'success',
-          text: 'FREE'
-        }
+        name: 'Fooseball',
+        url: '/forms/form-control'
       },
       {
-        name: 'CoreUI Flags',
-        url: '/icons/flags'
+        name: 'Cricket',
+        url: '/forms/select'
       },
       {
-        name: 'CoreUI Brands',
-        url: '/icons/brands'
-      }
-    ]
-  },
-  {
-    name: 'Notifications',
-    url: '/notifications',
-    iconComponent: { name: 'cil-bell' },
-    children: [
-      {
-        name: 'Alerts',
-        url: '/notifications/alerts'
+        name: 'Ludo',
+        url: '/forms/checks-radios'
       },
       {
-        name: 'Badges',
-        url: '/notifications/badges'
+        name: 'Table Tennis',
+        url: '/forms/range'
       },
-      {
-        name: 'Modal',
-        url: '/notifications/modal'
-      },
-      {
-        name: 'Toast',
-        url: '/notifications/toasts'
-      }
-    ]
-  },
-  {
-    name: 'Widgets',
-    url: '/widgets',
-    iconComponent: { name: 'cil-calculator' },
-    badge: {
-      color: 'info',
-      text: 'NEW'
-    }
-  },
-  {
-    title: true,
-    name: 'Extras'
-  },
-  {
-    name: 'Pages',
-    url: '/login',
-    iconComponent: { name: 'cil-star' },
-    children: [
-      {
-        name: 'Login',
-        url: '/login'
-      },
-      {
-        name: 'Register',
-        url: '/register'
-      },
-      {
-        name: 'Error 404',
-        url: '/404'
-      },
-      {
-        name: 'Error 500',
-        url: '/500'
-      }
     ]
   },
 ];
